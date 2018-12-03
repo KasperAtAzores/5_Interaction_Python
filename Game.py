@@ -1,6 +1,5 @@
 import bge
 import bpy
-import Transfer
 
 g_counter = -1
     
@@ -11,6 +10,7 @@ counter_name = 'Score'
 def add_to_counter():
     cont = bge.logic.getCurrentController()
     key_sensor = cont.sensors[sensor_name]
+    #print( str(list(key_sensor.events)))
     status = key_sensor.events[0][1] # bge.logic.KX_INPUT_JUST_ACTIVATED
     if status != bge.logic.KX_INPUT_JUST_ACTIVATED:
         return  
