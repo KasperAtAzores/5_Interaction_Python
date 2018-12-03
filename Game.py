@@ -1,6 +1,8 @@
 import bge
 import bpy
 import Transfer
+
+g_counter = -1
     
 sensor_name = 'keyboard'
 hud_name = 'HUD'
